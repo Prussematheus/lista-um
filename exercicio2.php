@@ -9,7 +9,7 @@
    <form method="POST" action="">
         <label for="numero">Verifica a tabuada de número x:</label>
         <input type="number" id="tabuada_numero" name="tabuada_numero" required>
-        <button type="submit" name="tabuada_numero">Verificar</button>
+        <button type="submit" name="tabuada">Verificar</button>
    </form>
 
    <?php
@@ -17,15 +17,19 @@
    if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     if(isset($_POST['tabuada_numero'])){
-        $numero = $_POST['numero'];
-        $ehPrimo = true;
-        $i = 1;
-       while($numero<=$numero*10);
-       echo $numero;
-       $numero*$i++;
+        $numero = $_POST['tabuada_numero'];
+       for ($i = 1; $i <= 10; $i++){;
+       while($i<=10){
+       echo "<br>";
+        echo $numero*$i++;
+         if ($i > 10) {
+        break;
+    }
+       };
 
 
 
+    };
     };
    };
    ?>
