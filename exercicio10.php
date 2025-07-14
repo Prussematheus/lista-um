@@ -2,12 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informa Par</title>
+    <title>Informa fibonacci</title>
 </head>
 <body>
 
    <form method="POST" action="">
-        <label for="numero">Verifica se é um número par ou ímpar:</label>
+        <label for="numero">Verifica sequência de fibonacci:</label>
         <input type="number" id="numero" name="numero" required>
         <button type="submit" name="verificar_par">Verificar</button>
    </form>
